@@ -1,5 +1,15 @@
-template-repository (1.0-1) unstable; urgency=medium
+mistune0 (0.8.4-2) unstable; urgency=medium
 
-  * Initial release
+  * Sourceful upload to go into testing
+  * To avoid conflicts with python3-mistune: s/mistune/mistune0/
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Pierre-Elliott Bécue <peb@debian.org>  Thu, 24 Feb 2022 22:34:36 +0100
+
+mistune0 (0.8.4-1) unstable; urgency=medium
+
+  * Initial release of mistune0. (Closes: #1005722)
+    (this is a repackaging of src:mistune flagged to be stuck at 0.8.4, as
+    mistune >= 2 is not backward compatible and rev-deps are moving slowly)
+    It is expected to be dropped before bookworm's release.
+
+ -- Pierre-Elliott Bécue <peb@debian.org>  Sun, 13 Feb 2022 23:27:00 +0100

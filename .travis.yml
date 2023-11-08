@@ -1,0 +1,18 @@
+language: python
+
+python:
+    - "2.7"
+    - "3.5"
+    - "3.6"
+    - "pypy"
+
+script:
+    - python setup.py -q nosetests
+
+after_success:
+    - pip install coveralls
+    - coverage run --source=mistune setup.py -q nosetests
+    - coveralls
+
+notifications:
+    email: false
